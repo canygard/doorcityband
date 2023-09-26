@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+
+p {
+	
+color: white;
+font-family: futura;
+}
+
+h1 {
+	
+color: white;	
+font-family: futura;
+}xw
+
+footer p {
+	
+	color: white;
+	text-align: center;
+}
+
+.bg {
+	
+	background-image: url("images/doorcity.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-bottom: -16px;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	
+background-color: hsla(0,0%,0%,0.66);
+background-size: cover;
+padding: 50px;
+margin: 0 auto;
+flex: 1;
+	
+	
+}
+
+
+.navlink {
+	
+color: white;
+float: right;
+}
+
+nav {
+
+background-color: black;
+padding: 30px;
+overflow: hidden;
+font-family: futura;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navlink a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navlink a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navlogo img {
+	max-height: 40px;
+}
+
+.footerlink {
+	
+color: white;
+float: left;
+}
+
+footer {
+
+background-color: black;
+padding: 30px;
+overflow: hidden;
+font-family: futura;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.footerlink a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footerlink a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.floatright {
+	
+	float: right;
+}
+
+	.zoom {
+  padding: 10px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+	
+}
+
+.block {
+    height: auto;
+    margin-bottom: 20px;
+	clear: both;
+	overflow: auto;
+	width:75%;
+	margin: 0 auto;
+}
+
+
+		
