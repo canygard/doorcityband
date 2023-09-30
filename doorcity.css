@@ -88,6 +88,24 @@ nav {
    
 }
 	
+	.navlink a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; /* Adjust the padding as needed */
+    text-decoration: none;
+    font-size: 17px;
+    display: block; /* Make the anchor a block-level element */
+}
+	
+	.footerlink a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; /* Adjust the padding as needed */
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+	
 }
 
 /* Desktop styles */
