@@ -1,143 +1,177 @@
+/* Reset and basic styles */
 @charset "UTF-8";
-
-
 body {
-	
-background-color: black;	
-}
-p {
-	
-color: white;
-font-family: futura;
+    background-color: black;
+    color: white;
+    font-family: futura, helvetica;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-	
-color: white;	
-font-family: futura;
-}xw
-
-footer p {
-	
-	color: white;
-	text-align: center;
-}
-
-.bg {
-	
-	background-image: url("images/doorcity.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    margin-bottom: -16px;
-	margin: 0;
-	background-attachment: fixed;
-}
-
-.wrapper {
-	
-background-color: hsla(0,0%,0%,0.66);
-background-size: cover;
-padding: 50px;
-margin: 0 auto;
-flex: 1;
-	
-	
-}
-
-
-.navlink {
-	
-color: white;
-float: right;
-}
-
+/* Header and navigation */
 nav {
-
-background-color: black;
-padding: 30px;
-overflow: hidden;
-font-family: futura;
-display: flex;
-align-items: center;
-justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+    font-family: futura;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navlink a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navlink a:hover {
-  background-color: #ddd;
-  color: black;
+.navlogo {
+    text-align: center;
 }
 
 .navlogo img {
-	max-height: 40px;
+    max-height: 40px;
+    display: block;
+    margin: 0 auto; /* Center the logo */
 }
 
-.footerlink {
-	
-color: white;
-float: left;
+.navlink {
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 
-footer {
-
-background-color: black;
-padding: 30px;
-overflow: hidden;
-font-family: futura;
-display: flex;
-align-items: center;
-justify-content: space-between;
+.navlink a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px;
 }
 
-.footerlink a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.navlink a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-.footerlink a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.floatright {
-	
-	float: right;
-}
-
-	.zoom {
-  padding: 10px;
-  transition: transform .2s;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+.zoom {
+    padding: 10px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.floatright {
+    float: right;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navlink {
+        flex-direction: column;
+    }
+	.navlogo {
+		padding-bottom: 20px;
+	}
+	
+	footer {
+    background-color: black;
+    padding: 30px;
+    overflow: hidden;
+    font-family: futura;
+	display: block;
+	text-align: center;
+   
+}
 	
 }
 
+/* Desktop styles */
+@media (min-width: 769px) {
+    .navlink {
+        list-style: none;
+        margin: 0;
+        float: right;
+    }
+
+    .navlink li {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .navlink li:last-child {
+        margin-right: 0;
+    }
+	
+	footer {
+    background-color: black;
+    padding: 30px;
+    overflow: hidden;
+    font-family: futura;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+/* Background image and content wrapper */
+.bg {
+    background-image: url("images/doorcity.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -16px;
+}
+
+.wrapper {
+    background-color: hsla(0, 0%, 0%, 0.66);
+    background-size: cover;
+    padding: 50px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* Other styles for your content sections */
 .block {
     height: auto;
     margin-bottom: 20px;
-	clear: both;
-	overflow: auto;
-	width:75%;
-	margin: 0 auto;
+    clear: both;
+    overflow: auto;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
+/* Footer */
+footer {
+    background-color: black;
+    padding: 30px;
+    overflow: hidden;
+    font-family: futura;
+   
+}
 
-		
+.footerlink {
+    color: white;
+    
+}
+
+.footerlink a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footerlink a:hover {
+    background-color: #ddd;
+    color: black;
+}
