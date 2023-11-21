@@ -116,7 +116,7 @@ text-align: center;
 .floatright {
 	
 	float: right;
-	border-radius: 300px;
+	border-radius: 100%;
 }
 
 .gallery {
