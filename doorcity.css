@@ -6,6 +6,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	background-color: #382e29;
+	width: 100%;
 }
 header {
 
@@ -198,7 +199,6 @@ article ul {
 .sectionimg {
 	
 	display: block;
-	background-image: url(images/door.png);
 	width: 30%;
 	height: 300px;
 	background-repeat: no-repeat;
@@ -209,7 +209,7 @@ article ul {
 
 }
 
-#show {
+.show {
 	
 	display: block;
 	background-repeat: no-repeat;
@@ -219,10 +219,7 @@ article ul {
 	text-align: center;
 	
 }
-#cramjam {
-	
-	background-image: url(images/cramjam.jpg)
-}
+
 
 .members {
 	
@@ -394,28 +391,33 @@ h2 {
 	
 
 
-@media (max-width: 800px) {
+@media (max-width: 769px) {
 
 	header {
 		
 		height: 400px;
 		width: 100%;
 		margin: 0 auto;
+		padding: 0px;
 		text-align: center;
 		
 	}
 	
 	header h1 {
 		
-		width: 300px;
-		margin-bottom: -10px;
+		width: 75%;
+		padding: 0px;
+		margin: 0px;
+		padding: 0px;
 	}
 	
 	nav ul {
 		
 	
 		flex-direction: column;
-		width: 90%;
+		width: 100vh;
+		margin: 0px;
+		padding: 0px;
 		
 		
 	}
@@ -423,11 +425,14 @@ h2 {
 	nav {
 		
 		text-align: center;
+		padding: 0px;
+		margin: 0px;
 	}
 	
 	
   nav ul a {
-    width: 600px;
+   width: 100vh;
+	  padding: 0px;
     display: block;
 	  margin: 0 auto;
 	  height: 40px;
@@ -445,6 +450,9 @@ h2 {
 	
 	.banner {
 		height: 300px;
+		padding: 0px;
+		margin: 0px;
+		
 	}
 	
 
@@ -456,6 +464,8 @@ h2 {
 	article {
 
 		width: 90%;
+		padding: 0px;
+		margin: 0px;
 		
 	}
 	
@@ -521,3 +531,4 @@ h2 {
 	
 	
 }
+
